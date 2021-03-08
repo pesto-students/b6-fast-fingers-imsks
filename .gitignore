@@ -1,0 +1,17 @@
+# dependencies
+node_modules
+
+package-lock.json
+package-lock.json
+
+# testing
+/coverage
+
+# production
+build
+.netlify
+.github
+yarn.lock
+
+dev.env
+prod.env

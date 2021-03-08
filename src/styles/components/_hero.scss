@@ -1,0 +1,22 @@
+.hero {
+  &__header {
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &__image {
+        width: 20rem;
+      }
+
+      &__heading {
+        margin: 1rem 0 0 0;
+      }
+
+      &__subheading {
+        margin: 0 0 1rem 0;
+      }
+    }
+  }
+}

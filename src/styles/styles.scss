@@ -1,0 +1,21 @@
+@import 'abstracts/mixin';
+@import 'abstracts/variables';
+
+@import 'base/base';
+@import 'base/typography';
+
+@import 'layout/navigation';
+@import 'layout/footer';
+
+@import 'components/buttons';
+@import 'components/form';
+@import 'components/loader';
+@import 'components/hero';
+
+@import 'pages/signup';
+@import 'pages/signin';
+@import 'pages/game';
+@import 'pages/dashboard';
+@import 'pages/previousscores';
+
+@import 'sections/player';

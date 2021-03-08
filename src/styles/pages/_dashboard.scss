@@ -1,0 +1,40 @@
+.gamedashboard {
+  background-image: url("../../assets/images/bg.png");
+
+  &__container {
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+      height: 100vh;
+
+      &__actions {
+        grid-column: 2 / 2;
+        grid-row: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &__heading {
+            font-size: 6rem;
+        }
+
+        &__container {
+          display: flex;
+          align-items: center;
+          padding: 0 5rem;
+          margin: 3rem 0;
+
+          &__item {
+
+            &:not(:first-child) {
+                margin: 0 0 0 2rem;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

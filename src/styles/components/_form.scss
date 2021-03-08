@@ -1,0 +1,91 @@
+.form {
+  width: 25%;
+
+  &__group {
+    margin-top: 3rem;
+  }
+
+  &__label {
+    font-size: 2.5rem;
+    font-weight: 600;
+    @include respond(small-phone) {
+      margin-left: 2rem;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    background-color: rgba($color: $color-grey, $alpha: 0.1);
+    color: $color-black;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    outline: none;
+    transition: 0.5s all;
+    border-radius: 5px;
+
+    &:focus {
+      color: $color-white;
+      background-color: rgba($color: $color-grey, $alpha: 0.3);
+    }
+
+    &::placeholder {
+      color: $color-grey;
+    }
+  }
+
+  &__select {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    color: $color-grey;
+    background-color: rgba($color: $color-grey, $alpha: 0.1);
+    font-weight: 600;
+
+    &__option {
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+  }
+
+  &__error {
+    font-size: 2rem;
+    color: $color-primary;
+    font-weight: 800;
+    margin: 1rem 0 0 0;
+  }
+
+  &__submit {
+    margin: 1rem 0 2rem 0;
+    width: 100%;
+    padding: 2rem 0;
+
+    &__section {
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__message {
+      font-size: 5rem;
+      font-weight: 500;
+      text-align: center;
+
+      @include respond(small-phone) {
+        font-size: 3rem;
+        font-weight: 500;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.gamepreviousscores {
+  background-image: url("../../assets/images/bg.png");
+
+  &__container {
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+      height: 100vh;
+
+      &__view {
+        grid-column: 2 / 2;
+        grid-row: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &__heading {
+          font-size: 3rem;
+        }
+
+        &__scores {
+          width: 100%;
+          margin: 3rem 0;
+          max-height: 50vh;
+          overflow: auto;
+
+          &__container {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 1rem 0;
+
+            &__gameno {
+              font-size: 2.5rem;
+            }
+
+            &__score {
+              font-size: 2.5rem;
+            }
+
+            &__scoredat {
+              font-size: 2.5rem;
+            }
+          }
+
+          &__nodata {
+              text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
