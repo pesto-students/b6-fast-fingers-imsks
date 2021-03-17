@@ -72,7 +72,7 @@ export const userSignIn = (userName, password, setFormError) => {
 };
 
 export const sendGameEndedDataToDatabase = (
-  difficulty = "EASY",
+  difficulty,
   currentGameScore
 ) => {
   const { userId } = JSON.parse(
